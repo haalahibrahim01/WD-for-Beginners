@@ -6,13 +6,23 @@
     </head>
     <body> 
     <h1>Contact Us</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="contact.html">Contacct Us</a></li>
+        </ul>
+
     <p> This page links our contacts for queries, feedbacks and more. </p>
-       
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="contact.html">Contacct Us</a></li>
-            </ul>
+
+       <section>
+        <form>
+            <label for="yourMessage">Feel free to type in additional reviews, 
+                feedbacks or messages you've got for us:</label>
+            <textarea id="yourMessage" name="yourMessage"></textarea>
+            <!-- Unlike input, textarea needs no closing tag -->
+            <input type="submit" value="Submit">
+        </form>
+       </section>
         </body>
         </html>

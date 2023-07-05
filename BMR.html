@@ -12,12 +12,13 @@
             <label for ="userAge">Age:
             </label>
             <input id ="userAge" type="text" name="userAge">
-           </form>
            </section>
+        <section>  
         <label for="userWeight">Weight:</label>
         <!-- When naming using strings in the label, make sure to eliminate spaces 
         between the alphabets. -->
         <input id="userWeight" type="text" name="userWeight">
+        </section>
 
         <!-- The below labelling can also be done but not well suited for every 
         screen reading device. Hence for more accessibility use first method. -->
@@ -25,26 +26,47 @@
         <label>Height:
             <input type="text" name="userHeight"> 
         </label>
-    </section>
-
-
-      
-
-    <section>
-        <label for ="userActivity">Activity level:
+        </section>
+   
+        <section>
+        <label for ="userActivity">Activity level: </label>
+        <select id="userActivity" name="userActivity">
+            <option value="veryActive">Very Active</option>
+            <option value="moderatelyActive">Moderately Active</option>
+            <option value="lightlyActive">Lightly Active</option>
+            <option value="sedentary">Sedentary</option>
+        </select>
             <!-- <ul>
                 <li>Very Active</li>
                 <li>Moderately Active</li>
                 <li>Lightly Active</li>
                 <li>Sedentary</li>
             </ul> -->
-        </label>
-        <input id ="userActivity" type="text">
-    </section>
+       
+        <!-- <input id ="userActivity" type="text"> -->
+        </section>
     
-       <input type="submit" value="Calculate"> 
+         <input type="submit" value="Calculate"> 
+         <section>Share your email or contact to receive customized dietary and activity 
+            recommendations based on your calculated BMR.
+
+         </section>
+         <section>
+         <label for="email">Email:</label>
+         <input id="email" type="email" name="email">  
+         <input type="submit" value="Send"
+         </section>
+
+        <section>
+         <label for="contact">Contact No:</label>   
+         <input id="contact" type="tel" name="contact">
+         <input type="submit" value="Send"
+         </section>
+         <!-- Can the same name'email' be used for all? -->
+        </form>
     </body>
     <footer>
     <a href="index.html">Back to Homepage</a>
-    <footer>
+    </footer>
+
     </html>
