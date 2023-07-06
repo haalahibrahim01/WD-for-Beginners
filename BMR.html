@@ -4,16 +4,17 @@
     <head> 
         <meta char="utf-8">
         <title>Calculate Your BMR</title>
+        <link rel="stylesheet" href="CSS/secondBMR.css">
     </head>
     <body>
        <header><h1>Fill in the form to calculate your BMR</h1></header>
        <form>
-        <section> 
+        <section class="age"> 
             <label for ="userAge">Age:
             </label>
             <input id ="userAge" type="text" name="userAge">
            </section>
-        <section>  
+        <section class="weight">  
         <label for="userWeight">Weight:</label>
         <!-- When naming using strings in the label, make sure to eliminate spaces 
         between the alphabets. -->
@@ -22,13 +23,13 @@
 
         <!-- The below labelling can also be done but not well suited for every 
         screen reading device. Hence for more accessibility use first method. -->
-        <section>
+        <section class="height">
         <label>Height:
             <input type="text" name="userHeight"> 
         </label>
         </section>
    
-        <section>
+        <section class="activity">
         <label for ="userActivity">Activity level: </label>
         <select id="userActivity" name="userActivity">
             <option value="veryActive">Very Active</option>
@@ -53,7 +54,7 @@
          </section>
          <section>
          <label for="email">Email:</label>
-         <input id="email" type="email" name="email">  
+         <input id="email" type="email" name="email" value="mail1">  
          <input type="submit" value="Send"
          </section>
 
