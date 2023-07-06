@@ -11,9 +11,9 @@
     
     /* float: left; */
 }
- ul .fixfloatideal {
+ /* ul .fixfloatideal {
     padding-left: 0px;
-}
+} */
 
 /* The float has to be cleared. When the list items are floated, the parent 
 element ul is not aware that there is content within. */
