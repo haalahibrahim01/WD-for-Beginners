@@ -1,0 +1,87 @@
+html{
+   background-color: rgb(247, 199, 111) 
+}
+header{
+    padding-top: 40px;
+  
+    /* padding-bottom: 20px;   doesn't work?? */
+} 
+header h1{
+    text-align: center;
+    margin: 0;
+    color: rgb(233, 187, 102)
+    /* font-weight: normal;   to remove boldness but colour changes to black.*/ 
+    /* font-size: 165%; */
+}
+header p{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+body{
+    font-family: Tahoma, sans-serif;
+    font-size: 92%
+}
+.containerHolistic{
+
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* box-sizing: border-box; */
+}
+.containerColumn{
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+   /* when both the divs,i.e; physical and mental, inside the 
+   parent div containerColumn are floated, the parent is not 
+   aware of the two divs, and the bottom border does not show or 
+   shows before the child divisions. 
+   We create a div class that sits below the float divisions called fix*/
+}
+.physical{
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+    padding:20px 20px 20px 20px;
+    box-sizing: border-box;
+    /* This div is floated to the left and the other divisions wraps around it */
+    /* padding together works in a clockwise manner */
+}  
+.mental{
+    width: 50%;
+    float: right;
+    margin-bottom: 40px;
+    padding:20px 20px;
+    /* one value for vertical and one value for horizontal */
+    box-sizing: border-box;
+}
+.fix{
+    clear:both;
+    /* clear can be left or right depending on the float used. This technically 
+    solves the issue but ideally we need the Clearfix Method where we add 
+    another class to the parent div element and create empty content before
+     and after it and clear it. */
+}
+
+.fixfloatideal:before,
+.fixfloatideal:after {
+    content: "";
+    display: table;
+}
+.fixfloatideal:after {
+    clear: both;
+}
+.fixfloatideal{
+    zoom: 1;
+}
+
+/* fix and fixfloatideal does the same task */
+/* Usually images are floated to the left or right and text is wrapped around it
+I'll be removing the columns and floating the images as separate divisions later. Right 
+now the sub-contents have been columnized */
+/* change background colour for each coloumn division and add padding. */
+/* add padding, color, size for footer */
+
