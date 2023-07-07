@@ -3,22 +3,35 @@ header h1{
     text-align: center;
 }
 
-table{
+table.nutrient{
     border-spacing: 0;
     border-collapse: collapse;
     width: 50%;
 }
-table th{
+table.nutrient th{
     text-align: left;
     background-color: #327432b3;
     color: #FFF;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
 }
-table th,
+table.nutrient th,
 table td {
     border: 1px solid #327432b3;
     padding: 5px;
 }
-table tbody tr:nth-child(even) td{
+table.nutrient tbody tr:nth-child(even) td{
     background-color: rgb(160, 191, 160);
 }
+
+.colMacro{
+width: 60%;
+}
+.colEnergy{
+width: 40%;
+}
+table.nutrient tr :nth-child(2){
+    text-align: center;
+}
+/* class is created for table in case there are other tables in the webpage */
+/* add a comma at the end of the above line and 
+write the same line with (3) if there is a third column and so on.*/
