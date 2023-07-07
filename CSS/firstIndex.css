@@ -4,23 +4,97 @@
     margin-right: auto;
     /* margin left and right works only with max width */
 }
+body header{
+    margin-bottom: 40px;
+}
+/* .borderLineSpace header{
+    padding-bottom:0px;
 
+} */
+.navigation a {
+    margin-top: 20px;
+    display:block;
+    color: rgb(239, 188, 93);
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    border: 3px solid  rgb(238, 218, 181);   
+    margin-bottom: 0px;
+    border-bottom:none;
+    m
+}
+
+.navigation a:hover {
+background-color: rgb(237, 206, 210);
+}
+
+.addBorderLine{
+margin-top: 0px;
+border-top: 3px solid  rgb(238, 218, 181);
+border-bottom: 3px solid  rgb(238, 218, 181);
+}
+
+
+/* nav a {
+    color: rgb(239, 188, 93);
+    text-decoration: none;
+} */
+
+/* box-sizing: border-box makes no change in the border. Why? */
+/* Both element and class specificity works here. */
+/* a is an inline element, i.e; if I add padding to it, the content 
+around it can overlap with that padding ( which is more evident 
+once you put a border around each of the navigation links. */
+/* By default, the browser has display:inline associated with the 
+'a' element. We overwrite the default and make the link a block level element. s */
+
+.navigation ul{
+    /* margin: 0;*/
+    padding: 0;
+    text-align: center;
+}
 .navigation li{
     list-style: none;
     display:inline-block;
-    
-    /* float: left; */
+    margin-right: 5px;
+     /* float: left; */
 }
+
  /* ul .fixfloatideal {
     padding-left: 0px;
 } */
-
+/* text-decoration removes underline */
+/* The display in line block used makes the alignment of the 
+navigation contents more visually pleasing by default with spacing 
+in between etc. 
+Whereas float left gives the same but with less spacing between the words.*/
+/* The navigation class requires a margi-top if float left instead of 
+inline block is used */
+/* margin=0 eliminates the space above and below the navigation contents 
+which is required when using float left.*/
+/* Make padding 0 before text align center. */
 /* The float has to be cleared. When the list items are floated, the parent 
 element ul is not aware that there is content within. */
 
-h2{
-    color: orange;
+.allArticles{
+    text-align: center;
 }
+article{
+    /* display:block; */
+    padding-bottom: 30px;
+}
+/* What will display block do here? Visually no changes observed. */
+
+article header h2{
+    color: orange;  
+    /* padding-bottom: 0px; */
+}
+
+/* article header{
+    padding-bottom: 0px;
+} */
+/* The above commented code is by which I tried to reduce the space between 
+h2 and p sentences in the article header but did not get executed. Why? */
+
 h1{
     text-align: center;
     font-weight: normal;
@@ -55,8 +129,8 @@ article footer .highlight {
     margin-bottom: 30px;
     /* width: 300px; */
     height : 300px
-    box-sizing border-box;
-}
+    box-sizing : border-box;
+       }
     /* Here the box sizing: border box causes the padding and margin pixels to 
     be taken as a part of the box itself. Otherwise the entire box dimension will 
     be the sum of width and height, padding and margin. If we want the text to 
