@@ -18,7 +18,14 @@ table.nutrient th,
 table td {
     border: 1px solid #327432b3;
     padding: 5px;
+    /* vertical-align: top; */
 }
+/* The above rule targets the entire table */
+/* vertical align top won't make a difference here. by default the column 
+elements are in the middle. By making it top they move parallel to the upper sentence 
+in the column preceding the column to be aligned. It is required when one cell content has 
+more than one line of text. */
+
 table.nutrient tbody tr:nth-child(even) td{
     background-color: rgb(160, 191, 160);
 }

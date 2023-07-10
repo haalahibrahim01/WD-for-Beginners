@@ -1,0 +1,33 @@
+html{
+    background-color: rgb(245, 213, 232) 
+ }
+ body h1{
+    padding-top: 40px;
+  
+    /* padding-bottom: 20px;   doesn't work?? */
+} 
+body h1{
+    text-align: center;
+    margin: 0;
+    color: rgb(233, 187, 102)
+    /* font-weight: normal;   to remove boldness but colour changes to black.*/ 
+    /* font-size: 165%; */
+}
+body p{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+body{
+    font-family: Tahoma, sans-serif;
+    font-size: 92%
+}
+.containerDos{
+
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}

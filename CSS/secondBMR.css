@@ -10,6 +10,130 @@ margin-bottom: 20px
 .activity{
     margin-bottom: 20px
 }
+
+/* Form styles */
+
+.styleForm{
+    width:40%;
+    background-color: rgb(207, 207, 207);
+    box-sizing: border-box; 
+    padding: 30px 40px;
+
+    /* What is the significance of box-sizing border box here? 
+    The layout is changing but cannot recollect what it exactly does.*/
+}
+
+input[type="email"],
+input[type="tel"]
+{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height:40px;
+    /* font-family: the font and fall-back used for the rest of the page; 
+    font-size:100%; */
+    margin-bottom: 15px;
+    border: 1px solid #CDCD;
+    outline: none;
+}
+
+input[type="number"]
+ {
+    width: 10%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height:30px;
+    outline: none;
+    /* font-family: the font used for the rest of the page; 
+    font-size:100%;*/
+}
+
+select
+ {
+    width: 10%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height:30px;
+    outline: none;
+    /* font-family: the font used for the rest of the page; 
+    font-size:100%;*/
+}
+
+/* Giving a visual feedback of a green border to users 
+when using a particular field */
+
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus
+{
+    border:1px solid #869960;
+    box-shadow:inset 2px 2px 2px rgba(0, 0, 0, .13);  
+}
+/* The green border appears. The default blue border 
+ goes away with outline none. */
+
+/* Style sign-in button */
+.styleForm input[type="submit"] {
+    width:20%;
+    margin:auto;
+    margin-bottom: 5px;
+    display: block;
+    box-sizing: border-box ;
+    background-color: #707070d7;
+    color: #FFFF;
+    padding:3px 0px;
+    border:1px solid #b6bcb6;
+    border-radius: 3px;
+    outline: none;
+     /* font-family: the font used for the rest of the page; 
+    font-size:100%;*/
+}
+
+.styleForm input[type="submit"]:hover,
+.styleForm input[type="submit"]:focus
+ {
+    border:1px solid #667b3b;
+    background-color:#869960 ; 
+}
+
+
+/* display and box sizing are not making any changes in the above styleForm. 
+Why do we use it?
+Margin auto shifted the send button to the centre of the box.
+*/
+
+/* The width is set to 100 to make the textbox 
+take up the whole line and not side by side. Will be required 
+when setting the entire layout of the page.*/
+
 /* There are more textboxes and types, calculate email 
 and contact to to be classed and margin-bottomed in this page 
 which has to be done later */
+
+/* We can hide the labels in the webpage in such a way that screen-reading 
+devices acknowledge it's existence but does not display it. Note that 
+simply using display: none could entirely neglect the label. Instead we do 
+the following: 
+We create a new class inside the label and type in CSS
+.name of class inside the label element{
+    position:absolute;
+    height:0;
+    width:0;
+    overflow:hidden;
+    visibility:hidden;
+*/
+/* The font we set for our entire page does not aply to form elements.
+This has to be specifically set.
+This can be done for all inputs and the select instead of inside each one.
+input,
+select{
+font-family: the font used for the rest of the page; 
+font-size:100%;
+}*/ 
+/* the select element can appear different depending on the browser 
+and OS. Dealt with differently using some CSS bundles. */
+/* You can create column within forms using div and for extra 
+styles within, you can use span. */

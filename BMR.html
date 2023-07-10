@@ -12,20 +12,20 @@
         <section class="age"> 
             <label for ="userAge">Age:
             </label>
-            <input id ="userAge" type="text" name="userAge">
+            <input id ="userAge" type="number" name="userAge">
            </section>
         <section class="weight">  
         <label for="userWeight">Weight:</label>
         <!-- When naming using strings in the label, make sure to eliminate spaces 
         between the alphabets. -->
-        <input id="userWeight" type="text" name="userWeight">
+        <input id="userWeight" type="number" name="userWeight">
         </section>
 
         <!-- The below labelling can also be done but not well suited for every 
         screen reading device. Hence for more accessibility use first method. -->
         <section class="height">
         <label>Height:
-            <input type="text" name="userHeight"> 
+            <input type="number" name="userHeight"> 
         </label>
         </section>
    
@@ -52,6 +52,8 @@
             recommendations based on your calculated BMR.
 
          </section>
+        
+         <div class="styleForm">
          <section>
          <label for="email">Email:</label>
          <input id="email" type="email" name="email" placeholder="eg: 123@gmail.com" >  
@@ -63,6 +65,8 @@
          <input id="contact" type="tel" name="contact" value="number">
          <input type="submit" value="Send"
          </section>
+        </div>
+         
          <!-- Can the same name'email' be used for all? -->
         </form>
     </body>
