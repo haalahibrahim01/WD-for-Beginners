@@ -22,6 +22,10 @@ body{
     font-family: Tahoma, sans-serif;
     font-size: 92%
 }
+
+
+
+
 .containerHolistic{
 
     max-width: 940px;
@@ -32,6 +36,9 @@ body{
     padding-right: 40px;
     /* box-sizing: border-box; */
 }
+
+
+
 .containerColumn{
    border-top: 3px solid black;
    border-bottom: 3px solid black;
@@ -41,22 +48,47 @@ body{
    shows before the child divisions. 
    We create a div class that sits below the float divisions called fix*/
 }
+
+
+
 .physical{
-    width: 50%;
+    width: 45%;
     float: left;
-    margin-bottom: 40px;
-    padding:20px 20px 20px 20px;
+    padding:20px 20px;
     box-sizing: border-box;
+    margin-left:-40px;
+    background-color: bisque;
+    background-image:linear-gradient(to bottom, bisque, #FFF);
+    /* background-size: auto 70%; */
     /* This div is floated to the left and the other divisions wraps around it */
     /* padding together works in a clockwise manner */
+   
 }  
+.physical video{
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+}
+/* Both margin top and padding top works here.*/
+
+
+
 .mental{
-    width: 50%;
+    width: 45%;
     float: right;
     margin-bottom: 40px;
     padding:20px 20px;
     /* one value for vertical and one value for horizontal */
     box-sizing: border-box;
+    background-color: bisque;
+    /* the background colour is added in case of fallback of gradient in outdated browsers. */
+    background-image:linear-gradient(to bottom, bisque, #FFF);
+    /* left, right, bottom let, bottom right etc gradients can be used) */
+}
+.mental svg {
+    padding-top: 30px;
+    width: 100%;
+    height:auto
 }
 .fix{
     clear:both;

@@ -1,15 +1,18 @@
 html{
     background-color: rgb(121, 144, 105) 
  }
-
+/* In the below section, we added backgrounds(multiple) to the top 
+and bottom of our elemnet. The layer/background we add first is at 
+the top of the stack.i.e; The one before the comma overlaps the background 
+after it. Add the background color in the final/last layer. */
 .containerDos {
     max-width: 860px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    background-image: url(../Images/color-tile.png);
-    background-repeat: repeat-x;
+    background:  url(../Images/color-tile.png) left bottom repeat-x, white url(../Images/color-tile.png) left top repeat-x ;
+    /* Why 'left' top and bottom ? */
     padding-top: 15px;
+    /* padding-left: 40px; */
     font-family: Tahoma, sans-serif;
     font-size: 17px;
 }

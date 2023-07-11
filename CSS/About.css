@@ -1,0 +1,81 @@
+html{
+    background-color: rgb(233, 194, 40) 
+ }
+ .containerAbout {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background:  white;
+    /* Why 'left' top and bottom ? */
+    padding: 60px 80px 80px 80px ;
+    font-family: Tahoma, sans-serif;
+    font-size: 17px;
+}
+.containerAbout h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.navigationAbout a{
+        margin-top: 20px;
+        display:block;
+        color: rgb(239, 188, 93);
+        text-decoration: none;
+        padding: 20px 20px 20px 20px;
+        border: 3px solid  rgb(238, 218, 181);   
+        margin-bottom: 0px;
+        /* border-bottom:none; */
+    }
+    
+.navigationAbout a:hover {
+    background-color: rgb(237, 206, 210);
+    } 
+.navigationAbout ul {
+        padding: 0;
+        text-align: center;
+    }
+.navigationAbout li{
+        list-style: none;
+        display:inline-block;
+        margin-right: 5px;
+    }
+
+.navigationAboutSprites a {
+    display:block;
+    text-decoration: none; 
+    width:50px;
+    height: 50px;
+    background-image: url(../Images/sprites.png);
+    text-indent: -9999px;
+    }
+     /* text indentgets rid of the writing "Profile and Settings'. Width and height
+      are at 50px because the icons in the file are 50*50 each. and the file 
+      only has icons(no extra margins, borders etc. After executing this the displays on 
+      the profile and settings position will be of the house in the png file.
+     To change that we create a class in each link to distinguish each 
+     link so that we can send different css instruction to each link so that it can show
+      the apt part of our graphic file.
+      When using each of these link classes we give the file position of the icons to be
+      displayed relative to the home icon because the home icon is displayed first.i.e; the
+      other icons are 50 and 100px away from the home icon. (x,y) form. horizontally right is 
+      negative. vertically down is negative. */
+
+.styleNavigationAboutSprites li{
+        float:left;
+        list-style: none;
+        /* display:inline; */
+        margin-right: 10px;
+    } 
+.profileAbout a {background-position: 0 -50px;}
+
+.profileAbout a:hover {background-position: -50px -50px;}
+
+.settingsAbout a {background-position: 0 -100px;}
+
+.settingsAbout a:hover {background-position: -50px -100px;}
+/* CSS Sprites */
+/* CSS Sprites are all centered around a bcakground image. */
+
+
+
