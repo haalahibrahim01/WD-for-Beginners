@@ -11,7 +11,7 @@
         <header>
         <h1>What is Holistic Wellness?</h1>
       <div class="headerpara">
-        <p> 
+        <p class="hideSmall"> 
             Holistic health is an approach to wellness that 
             simultaneously addresses the physical, mental, emotional, 
             social, and spiritual components of health. 
@@ -19,6 +19,10 @@
             disciplines, religions, and cultures to heal people, 
             communities, and even the environment.
         </p>
+        <!-- we created and used the reusable class hideSmall to p as well. hideSmall was 
+            defined earlier to hide the particular segment when the screen size goes below 700px.
+        it can also be used within navigation links.
+         Foe eg: <li class="hideSmall"><a href=.....>Contact Us</a></li> -->
       </div>
         <img src="Images/Holistic Wellness/Well2.jpg" alt="What is holistic wellness?">
         <!-- <a href="Audio/Calm.mp3">Calming audio recording</a> -->
@@ -26,11 +30,13 @@
             <source src="Audio/Calm.mp3" type="audio/mpeg">
             <source src="Audio/Calm.ogg" type="audio/ogg">
         </audio>
+        <div class="hideSmall">
         <p> As a field of practice, holistic medicine draws from many disciplines, 
             religions, and cultures to heal people, communities, and even the 
             environment. All of it's aspects are interdigitated. An efficient lifestyle 
             with respect to one extends it's influence into all the other domains. 
         </p>
+        </div>
     </header>
         <div class="containerColumn fixfloatideal">
         <ol> 

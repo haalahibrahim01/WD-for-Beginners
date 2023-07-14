@@ -37,6 +37,18 @@ body{
     /* box-sizing: border-box; */
 }
 
+@media screen and (max-width:700px){
+    .containerHolistic{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header{
+        padding-top: 20px;
+    }
+    .hideSmall{
+    display:none;
+    }
+}
 
 
 .containerColumn{
@@ -52,7 +64,7 @@ body{
 
 
 .physical{
-    width: 45%;
+    width: 50%;
     float: left;
     padding:20px 20px;
     box-sizing: border-box;
@@ -74,7 +86,7 @@ body{
 
 
 .mental{
-    width: 45%;
+    width: 50%;
     float: right;
     margin-bottom: 40px;
     padding:20px 20px;
@@ -84,6 +96,16 @@ body{
     /* the background colour is added in case of fallback of gradient in outdated browsers. */
     background-image:linear-gradient(to bottom, bisque, #FFF);
     /* left, right, bottom let, bottom right etc gradients can be used) */
+}
+@media screen and (max-width:700px){
+    .physical,
+    .mental {
+        width:auto;
+        float:none;
+    }
+    .mental{
+        margin-left: -40px;
+    }
 }
 .mental svg {
     padding-top: 30px;
